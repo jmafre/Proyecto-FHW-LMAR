@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url(../imagenes/matrix.jfif);
+  background-size: 100%;
+}
+/* Style the header */
+header {
+  background-color: rgba(0, 2, 2, 0);
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+}
+nav {
+  float: left;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+
+#menuprincipal {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Style the list inside the menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(17, 58, 17, 0.986);
+}
+
+
+li {
+  float: left;
+  font-size: 32px;
+}
+
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #d1ede7;
+  color: black;
+}
+
+article {
+  float: left;
+  padding: 320px;
+  width: 100%;
+  background-color: #73a009;
+  height: 8000px;
+ }
+
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  margin: 20px;
+  width:400px;
+  height:400px;
+  background-color:rgba(255, 255, 255, 0);
+  display:grid;
+  grid-template-columns: 900px 860px;
+  grid-row: auto auto;
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
+}
+.box{
+    background-color:rgb(18, 49, 11);
+    padding:20px;
+    border-radius:10px;
+    color:rgb(255, 255, 255);
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size:40px;
+    font-family:sans-serif;
+  }
+
+/* Style the footer */
+footer {
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  color: green
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article, footer, .container, .box, footer {
+    width: 100%;
+    height: auto;
+  }
+}
+
