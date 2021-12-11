@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Software</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href= "styles/estilo.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("article").hide()
+                $("#menuofimatica").click(function(){
+                    $("article").hide()
+                    $("#ofimatica").show();
+                    $("#ofimatica iframe").height($("#ofimatica iframe").contents().find("body").height() + 100);
+                });
+                $("#menumantenimiento").click(function(){
+                    $("article").hide()
+                    $("#mantenimiento").show();
+                    $("#mantenimiento iframe").height($("#mantenimiento iframe").contents().find("body").height() + 100);
+                });
+                $("#menuseguridad").click(function(){
+                    $("article").hide()
+                    $("#seguridad").show();
+                    $("#seguridad iframe").height($("#seguridad iframe").contents().find("body").height() + 100);
+                });
+                $("#menuportables").click(function(){
+                    $("article").hide()
+                    $("#portables").show();
+                    $("#portables iframe").height($("#portables iframe").contents().find("body").height() + 100);
+                });
+                $("#menututoriales").click(function(){
+                    $("article").hide()
+                    $("#tutoriales").show();
+                    $("#tutoriales iframe").height($("#tutoriales iframe").contents().find("body").height() + 100); 
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <h2>LENGUAJE DE MARCAS / FUNDAMENTOS DEL HARDWARE</h2>
+        </header>
+        <section>
+            <nav>
+                <ul id="menuprincipal">
+                <li id="menuofimatica"><a href="#ofimatica">Ofimática</a>
+                <li id="menumantenimiento"><a href="#mantenimiento">Mantenimiento PC</a></li>
+                <li id="menuseguridad"><a href="#seguridad">Antivirus</a></li>
+                <li id="menuportables"><a href="#portables">Portables</a></li>
+                <li id="menututoriales"><a href="#tutoriales">Videotutoriales</a></li>
+                </ul>
+            </nav>
+            <article id="ofimatica">
+                <iframe src="pages/ofimatica.html"></iframe>
+            </article>
+            <article id="mantenimiento">
+                <iframe src="pages/mantenimiento.html"></iframe>
+            </article>
+            <article id="seguridad">
+                <iframe src="pages/antivirus.html"></iframe>
+            </article>
+            <article id="portables">
+                <iframe src="pages/portables.html"></iframe>
+            </article>
+            <article id="tutoriales">
+                <iframe src="pages/tutoriales.html"></iframe>
+            </article>
+        </section>
+        <img src="imagenes/text.bmp" width="100%" height="30%">
+        <div class="container">
+            <div class="box">Próximamente...</div>
+            <div class="box">Sección de usuarios registrados</div>
+            <div class="box">Aplicaciones para móviles</div>
+            <div class="box">Blog con trucos y recomendaciones</div>
+        </div>
+        <footer>
+            <button id="botonClick">Contador de Clicks</button>
+            <p id="areaContador"></p>
+            <script type="text/javascript">
+                var botonElement = document.getElementById("botonClick");
+                var pElement = document.getElementById("areaContador");
+                var contador = 0;
+                botonElement.onclick = function () {
+                    contador++;
+                    pElement.textContent = contador;
+                }
+            </script>
+        </footer>
+    </body>
+</html>
