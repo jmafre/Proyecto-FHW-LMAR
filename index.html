@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -29,13 +30,18 @@
                 $("#menuportables").click(function(){
                     $("article").hide()
                     $("#portables").show();
-                    $("#portables iframe").height($("#portables iframe").contents().find("body").height() + 100);
+                    $("#portables iframe").height($("#portables iframe").contents().find("body").height() + 100);                
+                });
+                $("#menuclonezilla").click(function(){
+                    $("article").hide()
+                    $("#clonezilla").show();
+                    $("#clonezilla iframe").height($("#clonezilla iframe").contents().find("body").height() + 100); 
                 });
                 $("#menututoriales").click(function(){
                     $("article").hide()
                     $("#tutoriales").show();
                     $("#tutoriales iframe").height($("#tutoriales iframe").contents().find("body").height() + 100); 
-                });
+                });               
             });
         </script>
     </head>
@@ -50,7 +56,8 @@
                 <li id="menumantenimiento"><a href="#mantenimiento">Mantenimiento PC</a></li>
                 <li id="menuseguridad"><a href="#seguridad">Antivirus</a></li>
                 <li id="menuportables"><a href="#portables">Portables</a></li>
-                <li id="menututoriales"><a href="#tutoriales">Videotutoriales</a></li>
+                <li id="menuclonezilla"><a href="#clonezilla">Clonezilla</a></li>
+                <li id="menututoriales"><a href="#tutoriales">Videotutoriales</a></li>                
                 </ul>
             </nav>
             <article id="ofimatica">
@@ -64,6 +71,9 @@
             </article>
             <article id="portables">
                 <iframe src="pages/portables.html"></iframe>
+            </article>
+            <article id="clonezilla">
+                <iframe src="pages/clonezilla.html"></iframe>
             </article>
             <article id="tutoriales">
                 <iframe src="pages/tutoriales.html"></iframe>
