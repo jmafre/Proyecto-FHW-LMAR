@@ -69,4 +69,15 @@
     <summary>¿Necesitas algun tutorial para tu software? Entra en esta sección.</summary>
     <link rel="alternate" href="https://jmafre.github.io/Proyecto-FHW-LMAR/pages/tutoriales.html"/>
 </entry>
+<entry>
+    <id>https://jmafre.github.io/Proyecto-FHW-LMAR/pages/clonezilla.html</id>
+    <title>Clonezilla</title>
+    <update>2022-27-02T123:59:59+01:00</update>
+    <author>
+     <name>Mr.J</name>
+     <email>1234567890@gmail.com</email>
+    </author>
+    <summary>¿Quieres hacer las mejores copias de seguridad, tanto locales como remotas? ¡Entra en mi secció de Clonezilla para aprender más!</summary>
+    <link rel="alternate" href="https://jmafre.github.io/Proyecto-FHW-LMAR/pages/clonezilla.html"/>
+</entry> 
 </feed>
