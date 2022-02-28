@@ -21,23 +21,22 @@
 		<webMaster>1234567890@gmail.com</webMaster>
 		
 		<!-- Noticias del canal -->
-		<item>
-			<title>Ofimática</title>
-			<description>En este árticulo encontrarás el mejor software gratuito de ofimática para Windows y Linux</description>
-			<link>https://jmafre.github.io/Proyecto-FHW-LMAR/pages/ofimatica.html</link>
-			<author>Mr.J</author>
-			<category>ofimatica.html</category>
-			<pubDate>Sun, 02 Jan 2022 12:25:00 +0100</pubDate>
-        	</item> 
-		<item>
-			<title>Portables</title>
-			<description>En este árticulo encontrarás el mejor software para llevar todos tu libros organizados a cualquier parte</description>
-			<link>https://jmafre.github.io/Proyecto-FHW-LMAR/pages/portables.html</link>
-			<author>Mr.J</author>
-			<category>portables.html</category>
-			<pubDate>Tue, 11 Jan 2022 17:25:00 +0100</pubDate>
-        	</item> 
-		
+	<item>
+		<title>Ofimática</title>
+		<description>En este árticulo encontrarás el mejor software gratuito de ofimática para Windows y Linux</description>
+		<link>https://jmafre.github.io/Proyecto-FHW-LMAR/pages/ofimatica.html</link>
+		<author>Mr.J</author>
+		<category>ofimatica.html</category>
+		<pubDate>Sun, 02 Jan 2022 12:25:00 +0100</pubDate>
+        </item> 
+	<item>
+		<title>Portables</title>
+		<description>En este árticulo encontrarás el mejor software para llevar todos tu libros organizados a cualquier parte</description>
+		<link>https://jmafre.github.io/Proyecto-FHW-LMAR/pages/portables.html</link>
+		<author>Mr.J</author>
+		<category>portables.html</category>
+		<pubDate>Tue, 11 Jan 2022 17:25:00 +0100</pubDate>
+        </item> 		
         <item>
             <title>Mantenimiento PC</title>
             <description>En este árticulo encontrarás el mejor software para tener tu PC al día.</description>
@@ -62,6 +61,13 @@
             <category>tutoriales.html</category>
             <pubDate>Wed, 24 Feb 2022 12:25:00 +0100</pubDate>
         </item> 
-    
+        <item>
+            <title>Clonezilla</title>
+            <description>¿Quieres hacer las mejores copias de seguridad, tanto locales como remotas? ¡Entra en mi secció de Clonezilla para aprender más!</description>
+            <link>https://jmafre.github.io/Proyecto-FHW-LMAR/pages/clonezilla.html</link>
+            <author>Mr.J</author>
+            <category>tutoriales.html</category>
+            <pubDate>Wed, 28 Feb 2022 12:25:00 +0100</pubDate>
+        </item> 	    
 </channel>
 </rss>
