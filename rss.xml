@@ -77,5 +77,13 @@
             <category>tutoriales.html</category>
             <pubDate>Wed, 20 Mar 2022 12:25:00 +0100</pubDate>
         </item> 	
+	<item>
+            <title>XAMPP</title>
+            <description>Aprende a instalar XAMPP en Ubuntu. ¡No te lo pierdas!</description>
+            <link>https://jmafre.github.io/Proyecto-FHW-LMAR/pages/xampp.html</link>
+            <author>Mr.J</author>
+            <category>tutoriales.html</category>
+            <pubDate>Sun, 01 May 2022 12:25:00 +0100</pubDate>
+        </item> 	
 </channel>
 </rss>
