@@ -37,6 +37,11 @@
                     $("#clonezilla").show();
                     $("#clonezilla iframe").height($("#clonezilla iframe").contents().find("body").height() + 100); 
                 });
+                $("#xampp").click(function(){
+                    $("article").hide()
+                    $("#xampp").show();
+                    $("#xampp iframe").height($("#xampp iframe").contents().find("body").height() + 100); 
+                });
                 $("#menututoriales").click(function(){
                     $("article").hide()
                     $("#tutoriales").show();
@@ -57,6 +62,7 @@
                 <li id="menuseguridad"><a href="#seguridad">Antivirus</a></li>
                 <li id="menuportables"><a href="#portables">Portables</a></li>
                 <li id="menuclonezilla"><a href="#clonezilla">Clonezilla/DRBL</a></li>
+                <li id="xampp"><a href="#xampp">XAMPP/HeidiSQL</a></li>
                 <li id="menututoriales"><a href="#tutoriales">Videotutoriales</a></li>                
                 </ul>
             </nav>
@@ -74,6 +80,9 @@
             </article>
             <article id="clonezilla">
                 <iframe src="pages/clonezilla.html"></iframe>
+            </article>
+            <article id="xampp">
+                <iframe src="pages/xampp.html"></iframe>
             </article>
             <article id="tutoriales">
                 <iframe src="pages/tutoriales.html"></iframe>
