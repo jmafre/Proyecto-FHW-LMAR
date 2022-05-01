@@ -91,4 +91,15 @@
     <summary>Sección actualizada con varias mejoras: videos mejorados, manuales en pdfs disponibles para descarga y tutorial de DRBL. ¡No te lo pierdas!</summary>
     <link rel="alternate" href="https://jmafre.github.io/Proyecto-FHW-LMAR/pages/clonezilla.html"/>
 </entry>  
+<entry>
+    <id>https://jmafre.github.io/Proyecto-FHW-LMAR/pages/xampp.html</id>
+    <title>XAMPP</title>
+    <update>2022-01-05T119:00:00+01:00</update>
+    <author>
+     <name>Mr.J</name>
+     <email>1234567890@gmail.com</email>
+    </author>
+    <summary>Aprende a instalar XAMPP en Ubuntu. ¡No te lo pierdas!</summary>
+    <link rel="alternate" href="https://jmafre.github.io/Proyecto-FHW-LMAR/pages/xampp.html"/>
+</entry> 
 </feed>
