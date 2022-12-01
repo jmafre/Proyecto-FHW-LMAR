@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html lang="es">
+<head>	
+<title>FORMULARIO</title>
+<h1 style="background-color:rgb(79, 90, 100);text-align: center;">FORMULARIO IMPLANTACION WEB JORGE MAS FREIRE</h1>
+<style>
+.salida{border:1px solid #000}
+</style>
+</head>
+<body style="background-color:rgb(94, 193, 232)">
+<br>
+<form ACTION="datosformulario.php" METHOD="POST">
+<h3>Destino*:</h3>
+<select name="Destino" required>
+	  <optgroup label="U.S.A">
+		<option>Nueva York</option>
+		<option>Boston</option>
+		<option>Los Angeles</option>
+		<option>Chicago</option>
+		<option>Detroit</option>
+		<option>San Francisco</option>
+	  </optgroup>
+	  <optgroup label="Europa">
+		<option>Milan</option>
+		<option>Paris</option>
+		<option>Berlin</option>
+		<option>Londres</option>
+		<option>Zurich</option>
+		<option>Cordoba</option>
+	  </optgroup>
+		<optgroup label="Asia">
+		<option>Pekin</option>
+		<option>Tokio</option>
+		<option>Seul</option>
+		<option>Jerusalen</option>
+		<option>Nueva Delhi</option>
+		<option>Singapur</option>
+	  </optgroup>
+	</select>
+<h3>Fecha de salida*:</h3>
+	<input type="date" name="salida" required/>
+<br>
+	<input type="radio" value="flexible" name="flexible" />Soy flexible con la fecha
+<br>
+<h3>Numero de adultos*:</h3>
+	<select name="Adultos" required>	  
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>	
+	</select>
+<br>
+	<input type="radio" value="nino" name="nino"/>Viajamos con niños
+<br>
+<h3>Edad de los adultos:</h3>
+	<input type="checkbox" name="EdadA" value="1830">18-30 	
+	<input type="checkbox" name="EdadB" value="3150">31-50 <br/><br/>
+	<input type="checkbox" name="EdadC" value="5164">51-64
+	<input type="checkbox" name="EdadD" value="64" >+64
+<br/>
+<h3>Tipo de viaje:</h3> 
+	<input type="radio" id="pro" value="programado" name="programado"/>Viaje programado
+<br>
+<h3>Actividades o tour diarios que pueden ser programados:</h3>
+	<input type="checkbox" name="TourA" value="galapagos">Cruceros en las galapagos
+	<input type="checkbox" name="TourB" value="combinado">Tours combinados Hotel-Yate<br/><br/>
+	<input type="checkbox" name="TourC" value="empaquetado">Tours empaquetados
+<br>
+<h3>Unase a un tour programado, viaje en grupo de varios dias:</h3>
+	<input type="radio" value="TourD" name="TourD"/>Me gustaria que mis especialistas de viaje me sugerieran en base a mis intereses
+<br>
+<h3>Tipo de acomodacion*:</h3>
+	<input type="radio" id="31a50" value="5-estrellas" name="acomodacion" required/>5 estrellas
+	<input type="radio" id="18a30" value="4-estrellas" name="acomodacion" required/>4 estrellas 
+	<input type="radio" id="menos18" value="3-estrellas" name="acomodacion" required/>3 estrellas 
+<br>
+<h3>Otros servicios:</h3>
+	<input type="checkbox" name="servicioA" value="servicioA">Actividades, guias e informacion <br/>
+	<input type="checkbox" name="servicioB" value="servicioB">Transporte
+<br/>
+<h3>Presupuesto por persona*:</h3> 
+	<select name="presupuesto" required>
+	  	<option> </option>	
+		<option>Bajo</option>
+		<option>Medio</option>
+		<option>Alto</option>
+	</select>
+<br>
+<h3>Es el presupuesto flexible:</h3>
+<input type="radio" value=" Descrito" name="presupuestoZ" required/>El descrito es el maximo presupuesto
+<input type="radio" value="Flexible" name="presupuestoZ" required/>Flexible: Puedo incrementar 20% si se necesita<br/><br/> 
+<input type="radio" value="Muy flexible" name="presupuestoZ" required/>Muy flexible No se enfoque en un presupuesto especifico
+<br>
+<h3>Cual es el viaje quisieras:</h3>
+<textarea rows="10" cols="50" name="viajedeseado"></textarea> 
+<br/>
+<h3>Nombre y apellido*:</h3>
+<input type="text" name="nombre" required/>
+<br>
+<h3>E-mail*:</h3>
+<input type="text" name="email" required/>
+<br>
+<h3>Numero de telefono:</h3>
+<input type="text" name="telefono" />
+<br>
+<h3>Ciudad:</h3> 
+<input type="text" name="ciudad"/>
+<br>
+<h3>Pais de residencia*:</h3>
+<input type="text" name="residencia" required/>
+<br>
+<h3>Estoy de acuerdo con los terminos de uso y politicas de privacidad:</h3>
+<input type="checkbox" name="politica" value="polica" required>Acepto las condiciones.
+<br>  
+<input type="submit" value="ENVIAR"/>
+<input type="reset" value="BORRAR"/>
+</form>
+</html>
+
+
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html lang="es">
+<head>	
+<title>DATOS FORMULARIO</title>
+<h1 style="background-color:rgb(79, 90, 100);text-align: center;">DATOS RECOGIDOS</h1>
+<style>
+.salida{border:1px solid #000}
+</style>
+</head>
+<body style="background-color:rgb(94, 193, 232)">
+<br>
+<h3>Destino:</h3>
+<?php echo " ". $_POST['Destino']?>
+<br>
+<h3>Fecha de salida:</h3>
+<?php echo " ". $_POST['salida']?>
+<br>
+<?php 
+if (isset($_POST["flexible"]))
+				echo "Soy flexible con la fecha ";
+?>
+<br>
+<h3>Numero de adultos:</h3>
+<?php echo " ". $_POST['Adultos']?>
+<br>				
+<?php 
+if (isset($_POST["nino"]))
+				echo "<p>Viajamos con niños</p> ";
+?>
+<br>
+<h3>Edad de los adultos:</h3>
+<?php 
+if (isset($_POST["EdadA"]))
+				echo "<p>Adulto de 18-30 </p>";
+?>
+<br>
+<?php 
+if (isset($_POST["EdadB"]))
+				echo "<p>Adulto de 31-50</p>";
+?>
+<br>
+<?php 
+if (isset($_POST["EdadC"]))
+				echo "<p>Adulto de 51-64</p>";
+?>
+<br>
+<?php 
+if (isset($_POST["EdadD"]))
+				echo "<p>Adulto de +64</p>";
+?>
+<br>
+<h3>Tipo de viaje</h3> 
+<?php 
+if (isset($_POST["programado"]))
+				echo "<p>Es un viaje programado<p>";
+?>
+<br>
+<h3>Actividades o tour diarios que pueden ser programados:</h3>
+<?php 
+if (isset($_POST["TourA"]))
+				echo "<p>Cruceros en las galapagos<p>";
+?>
+<br>
+<?php 
+if (isset($_POST["TourB"]))
+				echo "<p>Tours combinados Hotel-Yate</p>";
+?>
+<br>
+<?php 
+if (isset($_POST["TourC"]))
+				echo "<p>Tours empaquetados</p>";
+?>
+<br>
+<h3>Unase a un tour programado, viaje en grupo de varios dias:</h3>
+<?php 
+if (isset($_POST["TourD"]))
+				echo "<p>Me gustaria que mis especialistas de viaje me sugerieran en base a mis intereses</p>";
+?>
+<br>
+<h3>Tipo de acomodacion:</h3>
+<?php echo " ". $_POST['acomodacion']?>
+<br>
+<h3>Otros servicios:</h3>
+<?php 
+if (isset($_POST["servicioA"]))
+				echo "<p>Actividades, guias e informacion</p>";
+?>
+<br>
+<?php 
+if (isset($_POST["servicioB"]))
+				echo "<p>Transporte</p>";
+?>
+<br>
+<h3>Presupuesto:</h3> 
+<?php echo " ". $_POST['presupuesto']?>
+<br>	
+<h3>Es el presupuesto flexible:</h3>
+<?php echo " ". $_POST['presupuestoZ']?>
+<br>	
+<h3>Cual es el viaje quisieras:</h3>
+<?php echo " ". $_POST['viajedeseado']?>
+<br>	
+<h3>Nombre y apellido</h3>
+<?php echo " ". $_POST['nombre']?>
+<br>
+<h3>E-mail:</h3>
+<?php echo " ". $_POST['email']?>
+<br>
+<h3>Numero de telefono:</h3>
+<?php echo " ". $_POST['telefono']?>
+<br>
+<h3>Ciudad</h3> 
+<?php echo " ". $_POST['ciudad']?>
+<br>
+<h3>Pais de residencia:</h3>
+<?php echo " ". $_POST['residencia']?>
+<br>
+</body>
+</html>
